@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# ถ้าไม่มี argument
 if [ $# -eq 0 ]; then
     echo "No arguments supplied"
 else

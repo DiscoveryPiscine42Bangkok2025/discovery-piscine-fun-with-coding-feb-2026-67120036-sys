@@ -1,47 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: left;
-    margin-top: 10px;
+    font-family: Arial;
+    background-color: #f3fdff;
 }
 
+/* กล่องเมนู */
 .menu {
     position: relative;
+    display: inline-block;
 }
 
-.burger {
-    background-color: #003a8f;
-    color: white;
-    padding: 15px 20px;
-    cursor: pointer;
+/* ปุ่มเมนู */
+.dropbtn {
+    background-color: #0f3cdf;
+    color: rgb(235, 229, 216);
+    padding: 15px;
     font-size: 18px;
+    border: none;
+    cursor: pointer;
 }
 
-.dropdown {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.dropdown-content {
     display: none;
     position: absolute;
-    width: 100%;
-    background-color: #d3d2d2;
-    border: 1px solid #a2009a;
+    background-color: rgb(193, 199, 235);
+    min-width: 150px;
 }
 
-.dropdown li a {
+.dropdown-content a {
+    color: rgb(237, 36, 36);
+    padding: 12px;
     display: block;
-    padding: 10px;
     text-decoration: none;
-    color: black;
-}
-
-.dropdown li a:hover {
-    background-color: gray;
 }
 
 
-.menu:hover .dropdown {
+.dropdown-content a:hover {
+    background-color: #b5b3b3;
+}
+
+
+.menu:hover .dropdown-content {
     display: block;
 }
-

@@ -1,12 +1,20 @@
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background</title>
+    <link rel="stylesheet" href="background.css">
+</head>
 
-button {
-    padding: 15px 30px;
-    font-size: 20px;
+<body>
+
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+function changeColor() {
+    let color = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = color;
 }
+</script>
+
+</body>
+</html>

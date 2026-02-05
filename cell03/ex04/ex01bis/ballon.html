@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>42 Bangkok - Web Development</title>
+
     <style>
       body {
         display: flex;
         flex-direction: column;
         height: 100vh;
         justify-content: center;
-        background-color: #000;
+        background-color: #fffcfc;
       }
 
       .balloon {
@@ -21,14 +22,24 @@
         background-color: #f00;
       }
     </style>
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   </head>
+
   <body>
     <div class="balloon"></div>
   </body>
+
+  <!-- ===== ส่วนที่แก้ไข ===== -->
   <script>
     $(document).ready(() => {
-      let i = 0;
+      function randomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+
       $(".balloon").click(function () {
         if ($(this).width() < 420) {
           $(this).width($(this).width() + 10);
@@ -37,11 +48,10 @@
           $(this).width(200);
           $(this).height(200);
         }
-        $(this).css("background-color", () => {
-          return i === 0 ? "#00ff00" : i === 1 ? "#00f" : "#f00";
-        });
-        i = (i + 1) % 3;
+
+        $(this).css("background-color", randomColor());
       });
+
       $(".balloon").mouseleave(function () {
         if ($(this).width() > 200) {
           $(this).width($(this).width() - 5);
@@ -50,10 +60,8 @@
           $(this).width(200);
           $(this).height(200);
         }
-        $(this).css("background-color", () => {
-          return i === 0 ? "#00ff00" : i === 1 ? "#00f" : "#f00";
-        });
-        i = (i + 1) % 3;
+
+        $(this).css("background-color", randomColor());
       });
     });
   </script>

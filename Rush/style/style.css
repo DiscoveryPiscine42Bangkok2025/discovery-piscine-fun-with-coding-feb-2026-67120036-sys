@@ -23,15 +23,26 @@ body {
     font-size: 20px;
 }
 
-/* ===== Home (Our Team) ===== */
-#team {
+/* ===== Home ===== */
+#home {
     padding-top: 40px;
-    background-color: #cdcdcd; /* เปลี่ยนสี Home */
+    background-color: #ffffff;   /* ✅ สี Home */
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+/* ===== Home Subtitle ===== */
+.home-subtitle {
+    font-size: 22px;
+    font-weight: 600;      /* ตัวหนา */
+    letter-spacing: 3px;
+    margin-top: -20px;     /* ดึงขึ้นใกล้ RUSH PROJECT */
+    color: #333;
+}
+
 
 /* ===== Home Big Title ===== */
 .home-title {
@@ -40,6 +51,13 @@ body {
     letter-spacing: 4px;
     margin-bottom: 40px;
 }
+
+/* ===== Team ===== */
+#team {
+    background-color: #ffffff;   /* ✅ สี Team */
+    min-height: 100vh;
+}
+
 /* ===== OUR TEAM Title ===== */
 #team h1 {
     font-size: 56px;   /* 🔄 เปลี่ยนขนาดตรงนี้ */
@@ -47,10 +65,28 @@ body {
     letter-spacing: 2px;
 }
 
+/* =============================== */
+/* TEAM Main Card (Wrapper Box) */
+/* =============================== */
+
+.team-main-card {
+    background-color: #f8f8f8ed;   /* สีเทาแบบในรูป */
+    border-radius: 40px;
+    padding: 80px 60px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-main-card {
+        padding: 50px 25px;
+        border-radius: 30px;
+    }
+}
 
 /* ===== Profile Card ===== */
 .profile-card {
-    background-color: #cdcdcd;
+    background-color: #ffffff;
     border-radius: 25px;
     padding: 25px;
     text-align: center;
@@ -126,6 +162,33 @@ body {
         font-size: 56px;
     }
 }
+
+/* ===== Home Card ===== */
+.home-card {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* RUSH PROJECT */
+.home-title {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* PRESENTED BY */
+.home-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #555;
+}
+
 /* ===== About Card (Overlay Box) ===== */
 .about-card {
     background-color: #ffffff;

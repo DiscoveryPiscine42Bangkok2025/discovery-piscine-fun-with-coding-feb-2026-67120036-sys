@@ -1,0 +1,441 @@
+/* ===== Global ===== */
+body {
+    padding-top: 80px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* ===== Navbar ===== */
+.nav-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+/* ===== Home ===== */
+#home {
+    padding-top: 40px;
+    background-color: #ffffff;   /* ✅ สี Home */
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ===== Home Subtitle ===== */
+.home-subtitle {
+    font-size: 22px;
+    font-weight: 600;      /* ตัวหนา */
+    letter-spacing: 3px;
+    margin-top: -20px;     /* ดึงขึ้นใกล้ RUSH PROJECT */
+    color: #333;
+}
+
+
+/* ===== Home Big Title ===== */
+.home-title {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+/* ===== Team ===== */
+#team {
+    background-color: #ffffff;   /* ✅ สี Team */
+    min-height: 100vh;
+}
+
+/* ===== OUR TEAM Title ===== */
+#team h1 {
+    font-size: 56px;   /* 🔄 เปลี่ยนขนาดตรงนี้ */
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* =============================== */
+/* TEAM Main Card (Wrapper Box) */
+/* =============================== */
+
+.team-main-card {
+    background-color: #f8f8f8ed;   /* สีเทาแบบในรูป */
+    border-radius: 40px;
+    padding: 80px 60px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-main-card {
+        padding: 50px 25px;
+        border-radius: 30px;
+    }
+}
+
+/* ===== Profile Card ===== */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    max-width: 360px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.profile-image-link img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover img {
+    transform: scale(1.05);
+}
+
+.profile-card-body {
+    margin-top: 20px;
+}
+
+.profile-name {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== Card Colors ===== */
+.profile-card.pink img {
+    border-color: #ff0000;
+    background-color: #ffc2dd;
+}
+
+.profile-card.yellow img {
+    border-color: #5f82ff;
+    background-color: #95fefe;
+}
+
+/* ===== About Us ===== */
+#about {
+    background-color: #ffffff; /* เปลี่ยนสี About */
+    min-height: 100vh;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .nav-menu a {
+        font-size: 16px;
+    }
+
+    .home-title {
+        font-size: 56px;
+    }
+}
+
+/* ===== Home Card ===== */
+.home-card {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* RUSH PROJECT */
+.home-title {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* PRESENTED BY */
+.home-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+/* ===== About Card (Overlay Box) ===== */
+.about-card {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    border-radius: 30px;                 /* มุมโค้ง */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.about-card {
+    transform: translateY(40px);
+}
+/* ===== Profile Card (Profile Page Size) ===== */
+.profile-section .profile-card {
+    max-width: 420px;
+}
+
+/* ============================= */
+/* Profile Page : Vertical Image */
+/* ============================= */
+
+/* ทำให้รูปในหน้า profile เป็นแนวตั้งและใหญ่ขึ้น */
+.profile-section .profile-image-link img {
+    height: 360px;          /* 🔼 ปรับความสูงรูป (แนวตั้ง) */
+    object-fit: cover;      /* ครอบรูปให้เต็มกรอบ ไม่บีบ */
+}
+
+/* เพิ่มพื้นที่การ์ดให้สมดุลกับรูป */
+.profile-section .profile-card {
+    padding-bottom: 35px;
+}
+
+/* ============================= */
+/* Responsive : Mobile */
+/* ============================= */
+@media (max-width: 768px) {
+    .profile-section .profile-image-link img {
+        height: 260px;      /* ลดความสูงบนมือถือ */
+    }
+}
+
+/* =============================== */
+/* Profile Main Card (Big Wrapper) */
+/* =============================== */
+
+.profile-main-card {
+    background-color: #ffffff;      /* 🔄 เปลี่ยนสีพื้นหลังตรงนี้ */
+    border-radius: 35px;            /* มุมโค้งมน */
+    padding: 60px 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* เว้นระยะด้านล่างไม่ให้ชิด section ต่อไป */
+.profile-section {
+    margin-bottom: 80px;
+}
+
+/* =============================== */
+/* Responsive */
+/* =============================== */
+@media (max-width: 768px) {
+    .profile-main-card {
+        padding: 35px 25px;
+        border-radius: 25px;
+    }
+}
+
+/* =============================== */
+/* Profile Info Text Control */
+/* =============================== */
+
+.profile-info {
+    font-family: 'Segoe UI', 'Prompt', sans-serif; /* 🔄 เปลี่ยนฟอนต์ตรงนี้ */
+}
+
+/* หัวข้อ เช่น ชื่อ / ความสนใจ / ทักษะ */
+.profile-info h3 {
+    font-size: 22px;        /* 🔄 ขนาดหัวข้อ */
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* ข้อมูล */
+.profile-info p {
+    font-size: 18px;        /* 🔄 ขนาดข้อความ */
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* เส้นคั่น (ของเดิม) ปรับให้ดูนุ่มขึ้น */
+.profile-info .info-block {
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* =============================== */
+/* Responsive */
+/* =============================== */
+@media (max-width: 768px) {
+    .profile-info h3 {
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 16px;
+    }
+}
+
+/* ===== Contact Icons (Profile Page) ===== */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;                 /* ระยะห่างระหว่างปุ่ม */
+    margin-top: 30px;
+}
+
+.contact-icons a {
+    width: 44px;               /* ขนาดปุ่ม */
+    height: 44px;
+    border-radius: 50%;        /* วงกลม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* เปลี่ยนสีพื้นหลังปุ่มได้ */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+/* ขนาดไอคอน */
+.contact-icons img {
+    width: 22px;               /* 🔽 ลดขนาดโลโก้ตรงนี้ */
+    height: 22px;
+    object-fit: contain;
+}
+
+/* ================================= */
+/* Image Gallery : Scroll Only (NEW) */
+/* ================================= */
+
+.image-gallery {
+    display: flex;
+    gap: 40px;
+
+    overflow-x: auto;
+    padding: 40px 20px;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+/* รูปภาพ */
+.image-gallery img {
+    width: 360px;
+    height: 260px;
+    object-fit: cover;
+
+    border-radius: 24px;
+    flex-shrink: 0;
+
+    scroll-snap-align: center;
+
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ลูกเล่นตอนเลื่อน / hover */
+.image-gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* =============================== */
+/* Fix Image Alignment (IMPORTANT) */
+/* =============================== */
+
+.profile-section .row {
+    align-items: flex-start;
+}
+
+.profile-section .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===================================== */
+/* Profile Image Alignment & Resize FIX */
+/* ===================================== */
+
+/* ให้คอลัมน์ซ้ายเริ่มจากระดับเดียวกับ NAME */
+.profile-section .row {
+    align-items: flex-start;
+}
+
+/* ขยับกรอบรูปขึ้นให้เสมอ NAME */
+.profile-section .col-md-3 {
+    margin-top: 0;
+}
+
+/* ขยายกรอบโปรไฟล์ (ไม่กระทบ landing) */
+.profile-section .profile-card {
+    max-width: 480px;     /* 🔼 กรอบกว้างขึ้น */
+    min-height: 820px;    /* 🔼 กรอบยาวขึ้น */
+    padding: 30px;
+}
+
+/* ทำให้รูปขยายตามกรอบ */
+.profile-section .profile-image-link img {
+    height: 520px;        /* 🔼 รูปสูงขึ้น */
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .profile-section .profile-card {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .profile-section .profile-image-link img {
+        height: 360px;
+    }
+}
+/* =============================== */
+/* Profile 2 : AJARIYA Border Color */
+/* =============================== */
+
+.profile-ajariya .profile-image-link img {
+    border-color: #ff524f;   /* 🔵 เปลี่ยนสีตรงนี้ได้ */
+}
+/* =============================== */
+/* Profile 2 : APISSARA Border Color */
+/* =============================== */
+
+.profile-apissara .profile-image-link img {
+    border-color: #ff4ff3;   /* 🔵 เปลี่ยนสีตรงนี้ได้ */
+}
+
